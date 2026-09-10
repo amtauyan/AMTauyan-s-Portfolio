@@ -88,7 +88,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                         build career in the tech industry that combines creativity and functionality. 
                         </p>
                         <div class="btn-group">
-                            <a class="btn-download" href="assets/cv.pdf" download="Angela-Tauyan-CV.pdf" title="Download CV (PDF)">Download Intern Resume                            </a>
+                            <a class="btn-download" href="assets/cv.pdf" download="Angela-Tauyan-CV.pdf" title="Download CV (PDF)">Download Resume                            </a>
                         </div>
                     </div>
                 </div>
@@ -252,6 +252,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                                 <div class="edu-school">Asia Pacific College</div>
                                 <div class="edu-school">Bachelor of Science in Information Technology - Specialization in Mobile and Internet</div>
                                 <div class="edu-address">Makati City, Metro Manila</div><br>
+                                <div class="edu-address">Magna Cum Laude</div>
                                 <div class="edu-address">APC – Microsoft Community, Vice President | SY 2024 - 2025</div>
                                 <div class="edu-address">APC – Microsoft Community, Director for Membership | SY 2023 - 2024 </div>
                                 <div class="edu-address">APC – Microsoft Community, Membership Associate | SY 2022 – 2023</div>
@@ -299,7 +300,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
                 </div>
             </div>
         </section>
-        <!-- Lightbox for project previews -->
         <div class="lightbox" id="lightbox">
             <span class="close" id="lightboxClose">✕</span>
             <img id="lightboxImg" src="" alt="Preview">
@@ -308,13 +308,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['contact_form'])) {
             <div class="main-container">
                 <div class="content" data-aos="fade-up" data-aos-duration="1000">
                     <h2>Contact</h2>
-                    <?php if ($contactStatus === 'success'): ?>
-                        <div class="contact-alert success">Thank you! Your message has been sent.</div>
-                    <?php elseif ($contactStatus === 'error'): ?>
-                        <div class="contact-alert error">Sorry, something went wrong. Please try again later.</div>
-                    <?php elseif ($contactStatus === 'invalid'): ?>
-                        <div class="contact-alert error">Please fill in all fields with a valid email.</div>
-                    <?php endif; ?>
                     <div class="contact-grid">
                         <div class="contact-details contact-card" data-aos="fade-right" data-aos-duration="800" style="max-width:640px;margin:0 auto;">
                             <h3>Get in touch</h3>
